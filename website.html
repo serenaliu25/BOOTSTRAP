@@ -4,10 +4,18 @@
 
 <head>
   <style>
+    #bananabg{
+      background-image: url("bg.jpeg");
+      background-color: #FFFFE0;
+    }
+    #bgoverlap{
+      background-color: #FFFFE0;
+      opacity: 0.85
+    }
     h1 {
       color: blue;
       font-family: verdana;
-      font-size: 200%;
+      font-size: 210%;
     }
     h3 {
       color: black;
@@ -43,21 +51,22 @@
     }
   </style>
   <title>Bananas.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
+  <div id="bananabg" class="container p-5 border">
+    <div id="bgoverlap" class="container p-4 my-8 border">
+      <h1>&#127820; Bananas. &#127820;</h1>
+      <h2>I think they're tasty</h2>
+      <a href="#recipes">in the off-chance you don't, give these recipes a shot</a>
+    </div>
+  </div>
 
-  <h1>&#127820; Bananas. &#127820;</h1>
-
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="download.jpeg"
-    alt="a banana in case you've never seen one" width=30% height=40%></a>
-
-  <h2>I think they're tasty</h2>
-  <h3>yum</h3>
-  <a href="#recipes">if you don't, give these recipes a shot</a>
-  <hr>
   <p>A banana is an elongated, edible fruit – botanically a berry – produced by
   several kinds of large herbaceous flowering plants in the genus Musa.
   In some countries, bananas used for cooking may be called "plantains",
@@ -154,6 +163,16 @@
     <li>baby food</li>
     <li>banana splits</li>
   </ol>
+
+  <p>If consuming bananas still isn't your cup of tea, do not fret! Lucky for you,
+  bananas also serve as...</p>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12"><img src="left.jpeg" class="rounded img-fluid" alt="banana smile"><p>photo props!</p></div>
+    <div class="col-lg-3 col-md-6 col-sm-12"><img src="midleft.jpeg" class="rounded img-fluid" alt="banana on wall"><p>artwork!</p></div>
+    <div class="col-lg-3 col-md-6 col-sm-12"><img src="midright.jpeg" class="rounded img-fluid" alt="banana facemask"><p>facemasks?!</p></div>
+    <div class="col-lg-3 col-md-6 col-sm-12"><img src="right.jpeg" class="rounded img-fluid" alt="banana shoes"><p>ah yes... shoes!</p></div>
+  </div>
+
 
 </body>
 </html>
