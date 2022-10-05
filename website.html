@@ -111,8 +111,8 @@
       </div>
     </div>
 
-    <div class="alert alert-success alert-dismissible">
-      <button type="button" class="btn-close" data-bs-dismiss="alert" data-bs-toggle="tooltip" title="you sure?	&#128064;"></button>
+    <div id="alert-div" class="alert alert-success alert-dismissible">
+      <button id="alert-button" type="button" class="btn-close" data-bs-toggle="tooltip" onclick="close_tooltip()" title="you sure?	&#128064;"></button>
       <strong>Loaded successfully!</strong> You should <a href="https://youtu.be/dQw4w9WgXcQ" class="alert-link">read this message</a>.
     </div>
 
@@ -170,6 +170,14 @@
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
+  function close_tooltip () {
+   alert_button = document.getElementById("alert-button")
+   var tooltip = bootstrap.Tooltip.getInstance(alert_button)
+   tooltip.hide()
+   alert_div = document.getElementById("alert-div")
+   var alert = bootstrap.Alert.getOrCreateInstance(alert_div)
+   alert.close()
+  }
   </script>
 
 </body>
